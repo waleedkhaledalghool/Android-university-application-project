@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout
+    android:id="@+id/update_page_admin"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/img_1"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/administration_input_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <Button
+            android:id="@+id/update_goBackButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="go back"
+            android:textSize="20sp"
+
+            >
+
+        </Button>
+        <!-- faculty Label -->
+        <TextView
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:paddingHorizontal="5sp"
+            android:textSize="25sp"
+            android:textColor="#ffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Faculty"
+            android:gravity="center"
+            />
+
+        <!-- faculty EditText -->
+        <!-- lecturer Label -->
+        <EditText
+            android:id="@+id/update_page_faculty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:background="#FFFF"
+            android:hint="Enter Faculty name"
+            android:padding="3sp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:paddingHorizontal="5sp"
+            android:textSize="25sp"
+            android:textColor="#ffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lecturer"
+            android:gravity="center"/>
+
+        <!-- lecturer EditText -->
+        <EditText
+            android:id="@+id/update_page_lecturer"
+            android:padding="3sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:background="#FFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Lecturer name"
+
+            android:textSize="20sp" />
+        <!-- Department Label -->
+        <TextView
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:paddingHorizontal="5sp"
+            android:textSize="25sp"
+            android:textColor="#ffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Department"
+            android:gravity="center"/>
+
+        <!-- Department EditText -->
+        <EditText
+            android:id="@+id/update_page_department"
+            android:padding="3sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:background="#FFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter department name"
+            android:textSize="20sp" />
+
+        <!-- Course Code Label -->
+        <TextView
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:paddingHorizontal="5sp"
+            android:textSize="25sp"
+            android:textColor="#ffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course Code"
+
+            android:gravity="center"/>
+
+        <!-- Course Code EditText -->
+        <EditText
+            android:padding="3sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:background="#FFFF"
+            android:id="@+id/update_page_courseCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter course code"
+            android:textSize="20sp" />
+
+        <!-- Course Name Label -->
+        <TextView
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:paddingHorizontal="5sp"
+            android:textSize="25sp"
+            android:textColor="#ffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course Name"
+            />
+
+        <!-- Course Name EditText -->
+        <EditText
+            android:padding="3sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:background="#FFFF"
+            android:id="@+id/update_page_courseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter course name"
+            android:layout_gravity="fill_horizontal"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Record to be updated"
+        android:textSize="40sp"
+        android:textColor="#FFFF"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:background="#004349"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/update_page_text_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Faculty:\nLecturer:\nDepartment:\nCourseCode:\nCourseName:"
+        android:textSize="25sp"
+        android:textColor="#FFFF"
+        android:fontFamily="sans-serif"
+        android:gravity="left"
+        android:background="#004349"
+        android:layout_weight="1"
+        >
+
+    </TextView>
+    <Button
+        android:id="@+id/btnUpdate_update_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Update"
+        android:textAllCaps="false"
+        >
+
+    </Button>
+
+
+</LinearLayout>
+

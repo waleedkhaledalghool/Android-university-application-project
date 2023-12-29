@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout
+    android:id="@+id/tab1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#02B5C5"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/administration_input_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+    <!-- faculty Label -->
+    <TextView
+        android:text="Faculty"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:paddingHorizontal="5sp"
+        android:textSize="25sp"
+        android:textColor="#ffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        />
+
+    <!-- faculty EditText -->
+    <EditText
+        android:padding="3sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="5sp"
+        android:background="#004349"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:id="@+id/administration_page_faculty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Faculty name"
+        android:textSize="20sp" />
+    <!-- lecturer Label -->
+    <TextView
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:paddingHorizontal="5sp"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lecturer"
+        android:gravity="center"/>
+
+    <!-- lecturer EditText -->
+    <EditText
+        android:id="@+id/administration_page_lecturer"
+        android:padding="3sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="5sp"
+        android:background="#004349"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Lecturer name"
+
+        android:textSize="20sp" />
+    <!-- Department Label -->
+    <TextView
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:paddingHorizontal="5sp"
+        android:textSize="25sp"
+        android:textColor="#ffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Department"
+        android:gravity="center"/>
+
+    <!-- Department EditText -->
+    <EditText
+        android:id="@+id/administration_page_department"
+        android:padding="3sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="5sp"
+        android:background="#004349"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter department name"
+        android:textSize="20sp" />
+
+    <!-- Course Code Label -->
+    <TextView
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:paddingHorizontal="5sp"
+        android:textSize="25sp"
+        android:textColor="#ffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Code"
+
+        android:gravity="center"/>
+
+    <!-- Course Code EditText -->
+    <EditText
+        android:id="@+id/administration_page_courseCode"
+        android:padding="3sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="5sp"
+        android:background="#004349"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter course code"
+        android:textSize="20sp" />
+
+    <!-- Course Name Label -->
+    <TextView
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:paddingHorizontal="5sp"
+        android:textSize="25sp"
+        android:textColor="#ffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Name"
+  />
+
+    <!-- Course Name EditText -->
+    <EditText
+        android:id="@+id/administration_page_courseName"
+        android:padding="3sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="5sp"
+        android:background="#004349"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter course name"
+        android:layout_gravity="fill_horizontal"
+        android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/buttonslayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/administration_input_info"
+
+        >
+
+        <Button
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+
+            android:paddingHorizontal="8sp"
+            android:id="@+id/administration_page_btnDropDb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Drop data base"
+            android:textSize="13sp"
+            android:textColor="#ffff"
+            android:background="#FF0000"
+
+            >
+
+        </Button>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/administration_page_btnResettxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Reset text"
+            android:textSize="17sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:background="#004349"
+
+
+            >
+
+        </Button>
+        <Button
+
+            android:id="@+id/administration_page_btnViewUnivesityTable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="#FFFF"
+            android:text="View University Table"
+            android:fontFamily="sans-serif-black"
+            android:background="#004349"
+
+
+            >
+
+        </Button>
+    </LinearLayout>
+
+    <!-- ListView -->
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_above="@+id/buttonslayout"
+        android:layout_below="@+id/buttonslayout2"
+        android:layout_weight="1"
+        android:dividerHeight="5sp"
+        android:scrollbarSize="10dp" />
+
+    <LinearLayout
+        android:id="@+id/buttonslayout"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:background="@drawable/boarder_black"
+
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:id="@+id/administration_page_btnAdd"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/boarder_black_dark_blue"
+            android:fontFamily="sans-serif-black"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="23sp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/administration_page_btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Delete"
+            android:textSize="23sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:background="@drawable/boarder_black_dark_blue"
+            >
+
+        </Button>
+        <Button
+            android:id="@+id/administration_page_btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Update"
+            android:textSize="23sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:background="@drawable/boarder_black_dark_blue"
+            >
+
+        </Button>
+
+        <Button
+            android:id="@+id/administration_page_btnSearch"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Search"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:fontFamily="sans-serif-black"
+            android:background="@drawable/boarder_black_dark_blue"
+
+            >
+
+        </Button>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

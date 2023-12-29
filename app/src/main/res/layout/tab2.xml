@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#004349"
+    android:orientation="vertical"
+   >
+    <TextView
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:paddingHorizontal="20sp"
+        android:paddingVertical="5sp"
+        android:textSize="30sp"
+        android:textColor="#ffff"
+        android:background="#004349"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="Registration"
+        />
+
+    <!-- Gender Label -->
+    <TextView
+        android:padding="2sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:paddingHorizontal="5sp"
+        android:textSize="25sp"
+        android:textColor="#ffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:background="#02B5C5"
+
+
+        />
+    <!-- Radio Group for Gender -->
+    <RadioGroup
+        android:id="@+id/tab2GenderRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Male Radio Button -->
+        <RadioButton
+            android:padding="5sp"
+            android:layout_weight="1"
+            android:id="@+id/tab2MaleRadioButton"
+            android:text="Male"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:paddingHorizontal="5sp"
+            android:textSize="25sp"
+            android:textColor="#ffff"
+            android:background="#004349"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"/>
+
+        <!-- Female Radio Button -->
+        <RadioButton
+            android:padding="5sp"
+            android:layout_weight="1"
+            android:id="@+id/tab2FemaleRadioButton"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:paddingHorizontal="5sp"
+            android:textSize="25sp"
+            android:textColor="#ffff"
+            android:background="#004349"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Female"/>
+    </RadioGroup>
+
+
+    <!-- Name Label -->
+    <TextView
+        android:padding="2sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:paddingHorizontal="5sp"
+        android:textSize="25sp"
+        android:textColor="#ffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:background="#02B5C5"
+        />
+
+    <!-- Name EditText -->
+    <EditText
+
+        android:id="@+id/tab2Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:padding="5sp"
+        android:textSize="24dp"
+        android:textColor="#ffff"
+        android:background="#004349"
+        android:textColorHint="#DDDBDB"
+        android:fontFamily="serif"
+       />
+
+    <!-- Last Name Label -->
+    <TextView
+        android:padding="2sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:paddingHorizontal="5sp"
+        android:textSize="25sp"
+        android:textColor="#ffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last Name"
+        android:background="#02B5C5"
+       />
+
+    <!-- Last Name EditText -->
+    <EditText
+        android:padding="5sp"
+        android:id="@+id/tab2LastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Last Name"
+        android:paddingHorizontal="5sp"
+        android:textSize="24dp"
+        android:textColor="#ffff"
+        android:background="#004349"
+        android:textColorHint="#DDDBDB"
+        android:fontFamily="serif" />
+    <TextView
+        android:padding="2sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:paddingHorizontal="5sp"
+        android:textSize="25sp"
+        android:textColor="#ffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Faculty"
+        android:background="#02B5C5"
+        />
+    <Spinner
+        android:id="@+id/spinner_faculty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5sp"
+        android:background="#004349"
+        />
+
+    <TextView
+        android:padding="2sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:paddingHorizontal="5sp"
+        android:textSize="25sp"
+        android:textColor="#ffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Department"
+        android:background="#02B5C5"
+        />
+    <Spinner
+        android:id="@+id/spinner_department"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5sp"
+        android:background="#004349"
+        />
+    <TextView
+        android:padding="2sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:paddingHorizontal="5sp"
+        android:textSize="25sp"
+        android:textColor="#ffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Advisor"
+        android:background="#02B5C5"
+        />
+
+    <Spinner
+        android:id="@+id/spinner_Advisor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5sp"
+        android:background="#004349"
+        />
+    <EditText
+
+        android:layout_marginVertical="43dp"
+        android:id="@+id/SearchBar_tab2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:textSize="23dp"
+        android:textColor="#ffff"
+        android:background="@drawable/edit_text_border"
+        android:textColorHint="#DDDBDB"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:hint="Search..."
+        android:gravity="center">
+    </EditText>
+
+    <!-- Linear Layout for Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/tab2RegisterButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Register"
+            android:textSize="23sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:background="#004349"
+
+            />
+
+        <!-- Reset Button -->
+        <Button
+            android:id="@+id/tab2CancelButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textSize="23sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:background="#004349"
+            />
+        <!-- Reset Button -->
+        <Button
+            android:id="@+id/tab2UpdateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Update"
+            android:textSize="23sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:background="#004349"
+            />
+        <!-- Reset Button -->
+        <Button
+            android:id="@+id/tab2SearchButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Search"
+            android:textSize="23sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:background="#004349"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:orientation="horizontal"
+        >
+        <!-- CheckBox for All Information are Correct -->
+        <CheckBox
+            android:id="@+id/tab2AllInfoCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="All Correct"
+            android:gravity="center"
+            android:padding="4sp"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:background="#004349"
+            android:button="@null"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+            android:drawableEnd ="?android:attr/listChoiceIndicatorMultiple"
+            />
+        <Button
+            android:id="@+id/tab2DeleteButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Delete"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:background="#004349"
+            />
+    </LinearLayout>
+
+</LinearLayout>

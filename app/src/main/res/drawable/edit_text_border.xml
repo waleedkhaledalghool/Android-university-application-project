@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edit_text_border.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/inner_shape"/>
+    <item android:drawable="@drawable/outer_shape"/>
+
+</layer-list>

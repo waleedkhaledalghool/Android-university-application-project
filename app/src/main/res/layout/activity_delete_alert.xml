@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/Delete_goBackButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="go back"
+        android:textSize="20sp"
+
+        >
+
+    </Button>
+    <ListView
+        android:id="@+id/Delete_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:dividerHeight="5sp"
+        android:scrollbarSize="10dp"
+        android:layout_weight="20"
+        />
+    <TextView
+        android:padding="5sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="are you sure you want to delete these items?"
+        android:textColor="#FFFFFF"
+        android:background="#FF0000"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif"
+
+        >
+
+    </TextView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    >
+
+    <Button
+        android:id="@+id/Delete_yes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:text="Yes"
+        android:textAllCaps="false"
+        >
+
+    </Button>
+    <Button
+        android:id="@+id/Delete_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:text="No"
+        android:textAllCaps="false"
+        >
+
+    </Button>
+</LinearLayout>
+
+</LinearLayout>

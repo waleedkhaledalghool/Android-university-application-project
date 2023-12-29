@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout
+    android:id="@+id/update_page_tab2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/img_1"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/student_input_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <Button
+            android:id="@+id/update_goBackButton_tab2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="go back"
+            android:textSize="20sp"
+
+            >
+
+        </Button>
+        <!-- name Label -->
+        <TextView
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:paddingHorizontal="5sp"
+            android:textSize="25sp"
+            android:textColor="#ffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:gravity="center"
+            />
+
+        <!-- faculty EditText -->
+        <!-- lecturer Label -->
+        <EditText
+            android:id="@+id/update_page_name_tab2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:background="#FFFF"
+            android:hint="Enter updated name"
+            android:padding="3sp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:paddingHorizontal="5sp"
+            android:textSize="25sp"
+            android:textColor="#ffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:gravity="center"/>
+
+        <!-- lecturer EditText -->
+        <EditText
+            android:id="@+id/update_page_lastname_tab2"
+            android:padding="3sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:background="#FFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter updated last name"
+
+            android:textSize="20sp" />
+
+        <!-- gender Label -->
+        <TextView
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:paddingHorizontal="5sp"
+            android:textSize="25sp"
+            android:textColor="#ffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            />
+        <!-- Radio Group for Gender -->
+        <RadioGroup
+            android:id="@+id/tab2GenderRadioGroup_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Male Radio Button -->
+            <RadioButton
+                android:padding="5sp"
+                android:layout_weight="1"
+                android:id="@+id/tab2MaleRadioButton_update"
+                android:text="Male"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:paddingHorizontal="5sp"
+                android:textSize="25sp"
+                android:textColor="#9AFAFB"
+                android:background="#5FBFC0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"/>
+
+
+            <!-- Female Radio Button -->
+            <RadioButton
+                android:padding="5sp"
+                android:layout_weight="1"
+                android:id="@+id/tab2FemaleRadioButton_update"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:paddingHorizontal="5sp"
+                android:textSize="25sp"
+                android:textColor="#FA4B4B"
+                android:background="#FCB6B8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Female"/>
+        </RadioGroup>
+        <!-- faculty Label -->
+        <TextView
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:paddingHorizontal="5sp"
+            android:textSize="25sp"
+            android:textColor="#ffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Faculty"
+            />
+        <Spinner
+            android:id="@+id/spinner_faculty_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:background="#B9DED6"
+
+            />
+        <!-- Department Label -->
+        <TextView
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:paddingHorizontal="5sp"
+            android:textSize="25sp"
+            android:textColor="#ffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Department"
+            android:gravity="center"/>
+        <Spinner
+            android:id="@+id/spinner_department_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:background="#B9DED6"
+            />
+
+
+        <!-- Advisor Label -->
+        <TextView
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:paddingHorizontal="5sp"
+            android:textSize="25sp"
+            android:textColor="#ffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Advisor"
+            android:gravity="center"/>
+        <Spinner
+            android:id="@+id/spinner_Advisor_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:background="#B9DED6"
+            />
+
+
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Record to be updated"
+        android:textSize="30sp"
+        android:textColor="#FFFF"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:background="#004349"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/update_page_text_box_tab2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name:\nLast Name:\nGender:\nFaculty:\nDepartment:\nAdvisor:"
+        android:textSize="23sp"
+        android:textColor="#FFFF"
+        android:fontFamily="sans-serif"
+        android:gravity="left"
+        android:background="#004349"
+        android:layout_weight="1"
+        >
+    </TextView>
+    <Button
+        android:id="@+id/btnUpdate_update_page_tab2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Update"
+        android:textAllCaps="false"
+        >
+
+    </Button>
+
+
+</LinearLayout>
+
