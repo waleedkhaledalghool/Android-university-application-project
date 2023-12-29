@@ -17,8 +17,8 @@
         android:id="@+id/imageView1"
         android:layout_width="55dp"
         android:layout_height="match_parent"
-        android:src="@drawable/img_3"
-
+        android:src="@drawable/img_4"
+        android:padding="10dp"
         />
 
 
@@ -31,6 +31,7 @@
         android:text="Strudent information"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
 
         >
 
