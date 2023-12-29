@@ -13,7 +13,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="this app is designed to accommodate a university database, one for administration and one for students"
+        android:text="this app is designed to accommodate a university database, one for administration and one for students, you can add,delete,search the database, and the application accommodates most if not all exceptions."
         android:textSize="30sp"
         android:fontFamily="sans-serif"
         android:textStyle="bold"

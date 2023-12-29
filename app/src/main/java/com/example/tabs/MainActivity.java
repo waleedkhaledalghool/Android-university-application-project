@@ -272,10 +272,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             popoutDialog(student_id,name,lastname,gender,faculty,department,advisor);
 
-
-            // Show a Toast or perform any other action with the selected item
-            Toast.makeText(getApplicationContext(), "Selected Item: " + selectedItem, Toast.LENGTH_SHORT).show();
-
             tab2Name.setText(name);
             tab2LastName.setText(lastname);
 
