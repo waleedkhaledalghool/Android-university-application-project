@@ -6,23 +6,15 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.graphics.Color;
-import android.graphics.Paint;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.*;
 import androidx.appcompat.widget.Toolbar;
-
-
 import androidx.appcompat.app.AppCompatActivity;
-
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
@@ -288,9 +280,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
 
 
-
+        // Initialize TabHost
         tabhost = (TabHost) findViewById(android.R.id.tabhost);
         tabhost.setup();
+
+
         TabHost.TabSpec tabspec;
         // Tab 1
         tabspec = tabhost.newTabSpec("Tab1");
@@ -332,6 +326,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     }
+
 
     private void setSpinner(String value,Spinner mySpinner) {
         ArrayAdapter<String> adapter = (ArrayAdapter<String>) mySpinner.getAdapter();

@@ -29,14 +29,13 @@
 
                 <TabWidget
                     android:id="@android:id/tabs"
-                    android:layout_width="match_parent"
+                    android:layout_width="357dp"
                     android:layout_height="wrap_content"
-                    android:background="#004349"
                     android:layout_weight="1"
+                    android:background="#004349"
 
 
-                    >
-                </TabWidget>
+                    ></TabWidget>
                 <androidx.appcompat.widget.Toolbar
                     android:id="@+id/toolbar"
                     android:layout_width="match_parent"
@@ -45,6 +44,7 @@
                     android:background="#004349"
                     android:layout_weight="6"/>
             </LinearLayout>
+
 
 
 
@@ -58,6 +58,8 @@
                 <include layout="@layout/tab3" />
 
             </FrameLayout>
+
         </LinearLayout>
     </TabHost>
+
 </LinearLayout>

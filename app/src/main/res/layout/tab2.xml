@@ -7,12 +7,15 @@
     android:background="#004349"
     android:orientation="vertical"
    >
+
+
+
     <TextView
         android:fontFamily="sans-serif"
         android:textStyle="bold"
         android:paddingHorizontal="20sp"
         android:paddingVertical="5sp"
-        android:textSize="30sp"
+        android:textSize="35sp"
         android:textColor="#ffff"
         android:background="#004349"
         android:layout_width="match_parent"
@@ -194,7 +197,7 @@
         />
     <EditText
 
-        android:layout_marginVertical="43dp"
+
         android:id="@+id/SearchBar_tab2"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -213,13 +216,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_weight="1"
         >
 
         <!-- Register Button -->
         <Button
             android:id="@+id/tab2RegisterButton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Register"
             android:textSize="23sp"
@@ -231,23 +235,23 @@
             />
 
         <!-- Reset Button -->
+        <!-- Reset Button -->
         <Button
             android:id="@+id/tab2CancelButton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="#004349"
+            android:fontFamily="sans-serif-black"
             android:text="Cancel"
-            android:textSize="23sp"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:fontFamily="sans-serif-black"
-            android:background="#004349"
-            />
-        <!-- Reset Button -->
+            android:textSize="23sp" />
+
         <Button
             android:id="@+id/tab2UpdateButton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Update"
             android:textSize="23sp"
@@ -260,7 +264,7 @@
         <Button
             android:id="@+id/tab2SearchButton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="Search"
             android:textSize="23sp"
@@ -273,7 +277,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-
+        android:layout_weight="1"
         android:orientation="horizontal"
         >
         <!-- CheckBox for All Information are Correct -->

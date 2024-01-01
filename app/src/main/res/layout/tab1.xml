@@ -12,143 +12,210 @@
     android:orientation="vertical">
 
 
+    <TextView
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:paddingHorizontal="20sp"
+        android:paddingVertical="5sp"
+        android:textSize="35sp"
+        android:textColor="#ffff"
+        android:background="#004349"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="Administration"
+        />
+
     <LinearLayout
         android:id="@+id/administration_input_info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_marginBottom="10sp"
        >
-    <!-- faculty Label -->
-    <TextView
-        android:text="Faculty"
-        android:fontFamily="sans-serif"
-        android:textStyle="bold"
-        android:paddingHorizontal="5sp"
-        android:textSize="25sp"
-        android:textColor="#ffff"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        />
 
-    <!-- faculty EditText -->
-    <EditText
-        android:padding="3sp"
-        android:layout_marginTop="5sp"
-        android:layout_marginBottom="5sp"
-        android:background="#004349"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF"
-        android:id="@+id/administration_page_faculty"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter Faculty name"
-        android:textSize="20sp" />
-    <!-- lecturer Label -->
-    <TextView
-        android:fontFamily="sans-serif"
-        android:textStyle="bold"
-        android:paddingHorizontal="5sp"
-        android:textSize="25sp"
-        android:textColor="#FFFFFF"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lecturer"
-        android:gravity="center"/>
 
-    <!-- lecturer EditText -->
-    <EditText
-        android:id="@+id/administration_page_lecturer"
-        android:padding="3sp"
-        android:layout_marginTop="5sp"
-        android:layout_marginBottom="5sp"
-        android:background="#004349"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter Lecturer name"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <!-- faculty Label -->
+            <TextView
+                android:text="Faculty"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:padding="5sp"
+                android:layout_margin="5sp"
+                android:textSize="25sp"
+                android:textColor="#ffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
 
-        android:textSize="20sp" />
-    <!-- Department Label -->
-    <TextView
-        android:fontFamily="sans-serif"
-        android:textStyle="bold"
-        android:paddingHorizontal="5sp"
-        android:textSize="25sp"
-        android:textColor="#ffff"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Department"
-        android:gravity="center"/>
+                />
+            <!-- lecturer Label -->
+            <TextView
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:padding="5sp"
+               android:layout_margin="5sp"
+                android:textSize="25sp"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lecturer"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
 
-    <!-- Department EditText -->
-    <EditText
-        android:id="@+id/administration_page_department"
-        android:padding="3sp"
-        android:layout_marginTop="5sp"
-        android:layout_marginBottom="5sp"
-        android:background="#004349"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter department name"
-        android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <!-- faculty EditText -->
+            <EditText
 
-    <!-- Course Code Label -->
-    <TextView
-        android:fontFamily="sans-serif"
-        android:textStyle="bold"
-        android:paddingHorizontal="5sp"
-        android:textSize="25sp"
-        android:textColor="#ffff"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Course Code"
+                android:paddingLeft="13dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="23sp"
+                android:background="@drawable/txtboxshape"
+                android:id="@+id/administration_page_faculty"
+                android:layout_width="160sp"
+                android:layout_height="wrap_content"
+                android:hint="Faculty name"
+                android:layout_weight="1"
+                android:layout_margin="5sp"
 
-        android:gravity="center"/>
+                />
 
-    <!-- Course Code EditText -->
+
+            <!-- lecturer EditText -->
+            <EditText
+                android:id="@+id/administration_page_lecturer"
+                android:layout_width="170sp"
+                android:layout_height="wrap_content"
+              android:layout_weight="1"
+                android:textSize="23sp"
+                android:background="@drawable/txtboxshape"
+                android:paddingLeft="13dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:hint="Lecturer name"
+                android:layout_margin="5sp"
+                />
+
+        </LinearLayout>
+
+
+            <!-- Department Label -->
+            <TextView
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:padding="5sp"
+                android:textSize="25sp"
+                android:textColor="#ffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Department"
+                android:layout_margin="5sp"
+                android:gravity="center"
+              />
+
+            <!-- Department EditText -->
+            <EditText
+                android:id="@+id/administration_page_department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="13dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="23sp"
+                android:background="@drawable/txtboxshape"
+                android:hint="Department name"
+                android:layout_margin="5sp"
+                />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <!-- Course Code Label -->
+            <TextView
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:padding="5sp"
+                android:textSize="25sp"
+                android:textColor="#ffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course Code"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+
+            <TextView
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:padding="5sp"
+                android:textSize="25sp"
+                android:textColor="#ffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course Name"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
     <EditText
         android:id="@+id/administration_page_courseCode"
-        android:padding="3sp"
-        android:layout_marginTop="5sp"
-        android:layout_marginBottom="5sp"
-        android:background="#004349"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter course code"
-        android:textSize="20sp" />
-
-    <!-- Course Name Label -->
-    <TextView
-        android:fontFamily="sans-serif"
-        android:textStyle="bold"
-        android:paddingHorizontal="5sp"
-        android:textSize="25sp"
-        android:textColor="#ffff"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Course Name"
-  />
-
+        android:layout_weight="1"
+        android:paddingLeft="13dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/txtboxshape"
+        android:hint="Course Code"
+        android:textSize="23sp"
+        android:layout_margin="5sp"/>
     <!-- Course Name EditText -->
     <EditText
         android:id="@+id/administration_page_courseName"
-        android:padding="3sp"
-        android:layout_marginTop="5sp"
-        android:layout_marginBottom="5sp"
-        android:background="#004349"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="13dp"
+        android:textSize="23sp"
+        android:background="@drawable/txtboxshape"
+        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter course name"
-        android:layout_gravity="fill_horizontal"
-        android:textSize="20sp" />
+        android:hint="Course Name"
+        android:layout_margin="5sp"
+        />
+
+</LinearLayout>
+
+
+
+
+
+
+
 
 
     </LinearLayout>

@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     android:background="#02B5C5"
     android:orientation="vertical">
+    <TextView
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:paddingHorizontal="20sp"
+        android:paddingVertical="5sp"
+        android:textSize="35sp"
+        android:textColor="#ffff"
+        android:background="#004349"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="Registered Students"
+        />
 
 <ListView
     android:id="@+id/tab3_listview"
