@@ -1,5 +1,4 @@
-package com.example.tabs;
-import android.content.Intent;
+package com.android_university_application_project.myapp;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;

@@ -1,4 +1,4 @@
-package com.example.tabs;
+package com.android_university_application_project.myapp;
 
 import android.app.Dialog;
 import android.content.Intent;

@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.tabs"
+    namespace = "com.android_university_application_project.myapp"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.tabs"
+        applicationId = "com.android_university_application_project.myapp"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
