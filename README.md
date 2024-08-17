@@ -1,0 +1,1 @@
+Simple university registration application
